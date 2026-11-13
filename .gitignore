@@ -1,0 +1,12 @@
+﻿node_modules/
+.next/
+dist/
+generated/
+.env
+.env*
+!.env.example
+*.tsbuildinfo
+apps/api/.agents/
+apps/api/.claude/
+apps/api/.windsurf/
+apps/api/skills-lock.json

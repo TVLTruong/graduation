@@ -1,0 +1,36 @@
+import type { Metadata } from "next";
+import { Baloo_2, Be_Vietnam_Pro, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+// Both fonts ship the "vietnamese" subset, so diacritics render in the same face
+const beVietnamPro = Be_Vietnam_Pro({
+  variable: "--font-be-vietnam-pro",
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const baloo2 = Baloo_2({
+  variable: "--font-baloo-2",
+  subsets: ["latin", "vietnamese"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Lễ tốt nghiệp Lâm Trường",
+  description: "Thiệp mời dự lễ tốt nghiệp của Lâm Trường",
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html
+      lang="vi"
+      className={`${beVietnamPro.variable} ${baloo2.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}

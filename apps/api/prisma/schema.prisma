@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Guest {
+  id          String   @id @default(uuid())
+  shortId     String   @unique // URL param
+  name        String   // Guest's name
+  title       String   // Title (Danh xưng: Ông, Bà, Bạn, Anh, Chị...)
+  type        String   // Type (Người thân, Bạn bè, Đặc biệt, Tất cả)
+  isAttending Boolean? // true: attending, false: not attending, null: no response
+  wish        String?  // The wish they leave
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
