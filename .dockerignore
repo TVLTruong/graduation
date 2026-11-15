@@ -1,0 +1,18 @@
+.git
+**/node_modules
+**/dist
+**/.next
+**/generated
+**/.env
+**/.env.*
+**/*.tsbuildinfo
+
+# Only the API is built into the image; the web app just needs its manifest for the lockfile
+apps/web/*
+!apps/web/package.json
+
+# Local assistant files
+apps/api/.agents
+apps/api/.claude
+apps/api/.windsurf
+apps/api/skills-lock.json
