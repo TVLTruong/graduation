@@ -156,8 +156,8 @@ function PhotoFrame({ height, s }: { height: number; s: number }) {
         <img
           src={CARD_PHOTO}
           alt=""
-          className="h-full w-full object-cover"
-          style={{ objectPosition: "50% 20%" }}
+          className="h-full w-full object-contain"
+          style={{ objectPosition: "50% 50%" }}
           onError={() => setMissing(true)}
         />
       )}
