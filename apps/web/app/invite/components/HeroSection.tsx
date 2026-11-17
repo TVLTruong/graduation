@@ -4,12 +4,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { EVENT } from "../event";
 
-const PHOTOS = [
-  "/pt2.jpg",
-  "/pt3.jpg",
-  "/pt4.jpg",
-  "/pt5.jpg"
-];
+// Stand-in until the real graduation photos exist: add them to public/ and list them here
+// (tapping the polaroid cycles through the list)
+const PHOTOS = ["/ava.png"];
 
 const FALLBACK_PHOTO = "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=600&auto=format&fit=crop";
 
@@ -78,7 +75,7 @@ export default function HeroSection() {
           </p>
         </motion.div>
       </div>
-      <p className="text-xs text-[var(--light-text)] mt-3">Chạm vào ảnh để xem thêm ✨</p>
+      {PHOTOS.length > 1 && <p className="text-xs text-[var(--light-text)] mt-3">Chạm vào ảnh để xem thêm ✨</p>}
 
       {/* Flat, bold wordmark in one solid colour (no outline or drop shadow) */}
       <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight mt-8 text-[var(--title-ink)]">
