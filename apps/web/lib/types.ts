@@ -1,4 +1,4 @@
-export const GUEST_TYPES = ["Người thân", "Bạn bè", "Đặc biệt", "Tất cả"] as const;
+export const GUEST_TYPES = ["Người thân", "Bạn bè", "Anh chị", "Đặc biệt", "Tất cả"] as const;
 
 export type GuestType = (typeof GUEST_TYPES)[number];
 

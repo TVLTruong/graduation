@@ -1,7 +1,7 @@
 import type { GuestType } from "@/lib/types";
 
 // Colors for each theme live in globals.css under [data-guest-theme="<key>"]
-export type InviteThemeKey = "friends" | "family" | "special" | "everyone";
+export type InviteThemeKey = "friends" | "family" | "seniors" | "special" | "everyone";
 
 export type InviteTheme = {
   key: InviteThemeKey;
@@ -95,6 +95,36 @@ const family: InviteTheme = {
   },
 };
 
+// Respectful but warm, em/anh chị (seniors, mentors, colleagues)
+const seniors: InviteTheme = {
+  key: "seniors",
+  cloudEmoji: "☁️",
+  ornament: "✨",
+  floatingEmojis: ["🎓", "✨", "📘", "🌟", "🎈"],
+  confettiColors: ["#5a67d8", "#7f9cf5", "#c3dafe", "#f6c343", "#434190"],
+  copy: {
+    introText: "Gửi anh chị...\nEm có một tấm thiệp nhỏ muốn gửi đến anh chị...",
+    greeting: "Trân trọng kính mời",
+    inviteBody: "đến chung vui cùng em trong ngày tốt nghiệp.",
+    rsvpCta: "Xác nhận tham dự",
+    closingLine: "Sự có mặt của anh chị là niềm vinh dự và động lực lớn với em trong ngày đặc biệt này.",
+    timeNote: "Anh chị sắp xếp đến đúng giờ giúp em nhé, em cảm ơn ạ!",
+    countdownTitle: "⏳ Đếm ngược tới ngày tốt nghiệp của em",
+    lostContact: "Cần hỗ trợ, anh chị cứ liên hệ em nhé!",
+    rsvpPrompt: "Anh chị có thể đến chung vui cùng em được không ạ?",
+    namePlaceholder: "Tên của anh chị...",
+    yes: { emoji: "🎉", label: "Anh chị sẽ đến" },
+    no: { emoji: "🙏", label: "Rất tiếc, không đến được" },
+    wishPlaceholder: "Anh chị nhắn em đôi lời nhé...",
+    thanks: {
+      yes: { emoji: "🎉", title: "Em cảm ơn anh chị ạ!", body: "Em đã nhận được xác nhận. Em rất mong được đón anh chị, anh chị nhớ đến đúng giờ giúp em nhé!" },
+      no: { emoji: "🙏", title: "Em hiểu ạ, em cảm ơn anh chị!", body: "Em cảm ơn anh chị đã báo cho em biết. Hẹn anh chị dịp khác, em vẫn luôn biết ơn sự giúp đỡ của anh chị ạ." },
+      wish: "Em cảm ơn lời nhắn của anh chị ạ 🙏",
+    },
+    footer: "🎓 Lễ tốt nghiệp của Lâm Trường — Em cảm ơn anh chị 🎓",
+  },
+};
+
 // Romantic, anh/em
 const special: InviteTheme = {
   key: "special",
@@ -158,6 +188,7 @@ const everyone: InviteTheme = {
 const THEMES: Record<GuestType, InviteTheme> = {
   "Bạn bè": friends,
   "Người thân": family,
+  "Anh chị": seniors,
   "Đặc biệt": special,
   "Tất cả": everyone,
 };

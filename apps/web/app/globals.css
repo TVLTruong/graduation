@@ -178,6 +178,29 @@
   --sky-gradient-light: #f8e7c4;
 }
 
+[data-guest-theme="seniors"] {
+  --sky-blue-deep: #5a67d8;
+  --sky-blue-mid: #7f9cf5;
+  --sky-blue-light: #c3dafe;
+  --sky-blue-soft: #eef2ff;
+  --grass-green-dark: #434190;
+  --grass-green: #5a67d8;
+  --grass-green-light: #e6ebff;
+  --sparkle-yellow: #f6c343;
+  --dark-text: #232846;
+  --title-ink: #3c366b;
+  --light-text: #55608a;
+  --muted-text: #6b7599;
+  --soft-box: #eef2ff;
+  --soft-box-hover: #e0e7ff;
+  --card-border: #d6e0ff;
+  --card-shadow: rgba(90, 103, 216, 0.15);
+  --card-shadow-hover: rgba(90, 103, 216, 0.25);
+  --button-shadow: rgba(67, 65, 144, 0.35);
+  --sky-gradient-mid: #8da2f5;
+  --sky-gradient-light: #d4e0ff;
+}
+
 [data-guest-theme="special"] {
   --sky-blue-deep: #d53f8c;
   --sky-blue-mid: #ed64a6;
