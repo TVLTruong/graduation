@@ -16,9 +16,9 @@ type Layout = {
 
 // All sizes are px on a 1080px-wide canvas; the dialog scales it down for preview
 const LAYOUTS: Record<CardRatio, Layout> = {
-  "4:5": { height: 1350, s: 0.94, photoH: 350, gap: 26, nameBase: 88 },
-  "1:1": { height: 1080, s: 0.7, photoH: 250, gap: 18, nameBase: 70 },
-  "9:16": { height: 1920, s: 1.2, photoH: 640, gap: 32, nameBase: 108 },
+  "4:5": { height: 1350, s: 0.94, photoH: 420, gap: 26, nameBase: 88 },
+  "1:1": { height: 1080, s: 0.7, photoH: 290, gap: 18, nameBase: 70 },
+  "9:16": { height: 1920, s: 1.2, photoH: 760, gap: 32, nameBase: 108 },
 };
 
 const STRIP_W = 940;
@@ -156,8 +156,8 @@ function PhotoFrame({ height, s }: { height: number; s: number }) {
         <img
           src={CARD_PHOTO}
           alt=""
-          className="h-full w-full object-contain"
-          style={{ objectPosition: "50% 50%" }}
+          className="h-full w-full object-cover"
+          style={{ objectPosition: "50% 15%" }}
           onError={() => setMissing(true)}
         />
       )}
