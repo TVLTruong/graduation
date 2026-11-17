@@ -6,9 +6,9 @@ import type { Guest } from "@/lib/types";
 import { getInviteTheme } from "@/app/invite/themes";
 import { EVENT as SHARED_EVENT } from "@/app/invite/event";
 
-// Drop the graduation portrait at apps/web/public/card-photo.jpg (portrait, face in the
-// upper half works best). Until the file exists the card shows a placeholder instead.
-export const CARD_PHOTO = "/card-photo.jpg";
+// Stand-in portrait (apps/web/public/ava.png). Once the real graduation photo exists, save it as
+// apps/web/public/card-photo.jpg (portrait, face in the upper half) and change this to "/card-photo.jpg".
+export const CARD_PHOTO = "/ava.png";
 
 export type CardRatio = "4:5" | "1:1" | "9:16";
 
