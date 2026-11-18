@@ -161,6 +161,7 @@ export default function GuestList({ password }: { password: string }) {
                   <th className="py-3 px-4">Tên</th>
                   <th className="py-3 px-4">Danh xưng</th>
                   <th className="py-3 px-4">Loại</th>
+                  <th className="py-3 px-4">Phản hồi</th>
                   <th className="py-3 px-4 text-right">Hành động</th>
                 </tr>
               </thead>
@@ -173,6 +174,15 @@ export default function GuestList({ password }: { password: string }) {
                       <span className="bg-slate-100 text-slate-700 px-2 py-1 rounded text-xs">
                         {g.type}
                       </span>
+                    </td>
+                    <td className="py-3 px-4">
+                      {g.isAttending === true ? (
+                        <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-xs font-medium">Có tham dự</span>
+                      ) : g.isAttending === false ? (
+                        <span className="bg-red-50 text-red-600 px-2 py-1 rounded text-xs font-medium">Không tham dự</span>
+                      ) : (
+                        <span className="bg-slate-50 text-slate-500 px-2 py-1 rounded text-xs">Chưa phản hồi</span>
+                      )}
                     </td>
                     <td className="py-3 px-4 text-right space-x-2">
                       <button onClick={() => viewLink(g.shortId)} className="p-2 text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition" title="Xem">

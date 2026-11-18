@@ -64,7 +64,7 @@ export default function AdminDashboard({ password, onLogout }: { password: strin
         <div className="max-w-5xl mx-auto">
           {activeTab === "list" && <GuestList password={password} />}
           {activeTab === "wishes" && <WishesTab password={password} />}
-          {activeTab === "stats" && <StatsTab stats={stats} />}
+          {activeTab === "stats" && <StatsTab key={statsReloadKey} stats={stats} password={password} />}
         </div>
       </main>
     </div>
