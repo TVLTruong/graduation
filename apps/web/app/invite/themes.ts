@@ -133,7 +133,7 @@ const juniors: InviteTheme = {
   floatingEmojis: ["🎓", "✨", "🌟"],
   confettiColors: ["#2f9e6b", "#48bb8a", "#b5ead0", "#f6c343", "#1f7a52"],
   copy: {
-    introText: "Anh gửi em thiệp mời.\nAnh sắp tốt nghiệp.",
+    introText: "Sau những năm tháng học tập ở giảng đường, anh đã đi đến ngày tốt nghiệp.\nAnh muốn gửi đến em tấm thiệp này, để em cùng anh có mặt trong ngày quan trọng ấy.",
     greeting: "Thư mời",
     inviteBody: "Anh mời em đến dự lễ tốt nghiệp của anh.",
     rsvpCta: "Xác nhận tham dự",
