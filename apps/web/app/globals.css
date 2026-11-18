@@ -201,6 +201,29 @@
   --sky-gradient-light: #d4e0ff;
 }
 
+[data-guest-theme="juniors"] {
+  --sky-blue-deep: #2f9e6b;
+  --sky-blue-mid: #48bb8a;
+  --sky-blue-light: #b5ead0;
+  --sky-blue-soft: #ecfaf2;
+  --grass-green-dark: #1f7a52;
+  --grass-green: #2f9e6b;
+  --grass-green-light: #dcf5e8;
+  --sparkle-yellow: #f6c343;
+  --dark-text: #1f3a2e;
+  --title-ink: #1d6b49;
+  --light-text: #51705f;
+  --muted-text: #6b8576;
+  --soft-box: #ecfaf2;
+  --soft-box-hover: #d9f3e5;
+  --card-border: #cdeedd;
+  --card-shadow: rgba(47, 158, 107, 0.15);
+  --card-shadow-hover: rgba(47, 158, 107, 0.25);
+  --button-shadow: rgba(31, 122, 82, 0.35);
+  --sky-gradient-mid: #6fd0a0;
+  --sky-gradient-light: #c8f0dc;
+}
+
 [data-guest-theme="special"] {
   --sky-blue-deep: #d53f8c;
   --sky-blue-mid: #ed64a6;

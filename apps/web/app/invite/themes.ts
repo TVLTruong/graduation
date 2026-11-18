@@ -1,7 +1,7 @@
 import type { GuestType } from "@/lib/types";
 
 // Colors for each theme live in globals.css under [data-guest-theme="<key>"]
-export type InviteThemeKey = "friends" | "family" | "seniors" | "special" | "everyone";
+export type InviteThemeKey = "friends" | "family" | "seniors" | "juniors" | "special" | "everyone";
 
 export type InviteTheme = {
   key: InviteThemeKey;
@@ -125,6 +125,36 @@ const seniors: InviteTheme = {
   },
 };
 
+// Warm and affectionate, anh/em (younger siblings and cousins)
+const juniors: InviteTheme = {
+  key: "juniors",
+  cloudEmoji: "🌱",
+  ornament: "🍀",
+  floatingEmojis: ["🎓", "🍀", "🎈", "🌟", "🎉"],
+  confettiColors: ["#2f9e6b", "#48bb8a", "#b5ead0", "#f6c343", "#1f7a52"],
+  copy: {
+    introText: "Gửi em của anh...\nAnh có một tấm thiệp nhỏ muốn gửi đến em...",
+    greeting: "Anh mời",
+    inviteBody: "đến chung vui với anh trong ngày tốt nghiệp nha!",
+    rsvpCta: "Xác nhận nhé em",
+    closingLine: "Có em đến chung vui, anh sẽ vui lắm. Em đến chụp với anh một tấm hình nha!",
+    timeNote: "Em nhớ đến đúng giờ nha, đừng ngủ nướng nhé! 😄",
+    countdownTitle: "⏳ Đếm ngược tới ngày anh tốt nghiệp!",
+    lostContact: "Lạc đường thì nhắn anh liền nha!",
+    rsvpPrompt: "Em đến chung vui với anh được không?",
+    namePlaceholder: "Tên của em...",
+    yes: { emoji: "🥳", label: "Em sẽ đến!" },
+    no: { emoji: "🥺", label: "Em bận mất rồi" },
+    wishPlaceholder: "Em nhắn anh vài lời nhé...",
+    thanks: {
+      yes: { emoji: "🥳", title: "Hẹn gặp em nha!", body: "Anh nhận được xác nhận của em rồi. Cảm ơn em đã đến chung vui, nhớ đến đúng giờ nhé!" },
+      no: { emoji: "🤗", title: "Không sao đâu em!", body: "Cảm ơn em đã báo anh biết. Em cứ lo việc của em nhé, hẹn em dịp khác." },
+      wish: "Anh đọc lời nhắn của em rồi, cảm ơn em nhiều 💚",
+    },
+    footer: "🎓 Lễ tốt nghiệp của Lâm Trường — Cảm ơn em đã đến 🎓",
+  },
+};
+
 // Romantic, anh/em
 const special: InviteTheme = {
   key: "special",
@@ -189,6 +219,7 @@ const THEMES: Record<GuestType, InviteTheme> = {
   "Bạn bè": friends,
   "Người thân": family,
   "Anh chị": seniors,
+  "Em": juniors,
   "Đặc biệt": special,
   "Tất cả": everyone,
 };
