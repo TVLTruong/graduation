@@ -125,33 +125,33 @@ const seniors: InviteTheme = {
   },
 };
 
-// Warm and affectionate, anh/em (younger siblings and cousins)
+// Plain and straightforward, anh/em (younger siblings and cousins)
 const juniors: InviteTheme = {
   key: "juniors",
   cloudEmoji: "🌱",
-  ornament: "🍀",
-  floatingEmojis: ["🎓", "🍀", "🎈", "🌟", "🎉"],
+  ornament: "✦",
+  floatingEmojis: ["🎓", "✨", "🌟"],
   confettiColors: ["#2f9e6b", "#48bb8a", "#b5ead0", "#f6c343", "#1f7a52"],
   copy: {
-    introText: "Gửi em của anh...\nAnh có một tấm thiệp nhỏ muốn gửi đến em...",
-    greeting: "Anh mời",
-    inviteBody: "đến chung vui với anh trong ngày tốt nghiệp nha!",
-    rsvpCta: "Xác nhận nhé em",
-    closingLine: "Có em đến chung vui, anh sẽ vui lắm. Em đến chụp với anh một tấm hình nha!",
-    timeNote: "Em nhớ đến đúng giờ nha, đừng ngủ nướng nhé! 😄",
-    countdownTitle: "⏳ Đếm ngược tới ngày anh tốt nghiệp!",
-    lostContact: "Lạc đường thì nhắn anh liền nha!",
-    rsvpPrompt: "Em đến chung vui với anh được không?",
-    namePlaceholder: "Tên của em...",
-    yes: { emoji: "🥳", label: "Em sẽ đến!" },
-    no: { emoji: "🥺", label: "Em bận mất rồi" },
-    wishPlaceholder: "Em nhắn anh vài lời nhé...",
+    introText: "Anh gửi em thiệp mời.\nAnh sắp tốt nghiệp.",
+    greeting: "Thư mời",
+    inviteBody: "Anh mời em đến dự lễ tốt nghiệp của anh.",
+    rsvpCta: "Xác nhận tham dự",
+    closingLine: "Anh mong em sắp xếp thời gian đến dự và chụp chung với anh một tấm hình.",
+    timeNote: "Em đến đúng giờ nha.",
+    countdownTitle: "⏳ Còn bao lâu nữa đến ngày tốt nghiệp",
+    lostContact: "Cần hỗ trợ thì liên hệ anh.",
+    rsvpPrompt: "Em có tham dự được không?",
+    namePlaceholder: "Tên của em",
+    yes: { emoji: "✅", label: "Em sẽ đến" },
+    no: { emoji: "🙏", label: "Em không đến được" },
+    wishPlaceholder: "Em muốn nhắn gì với anh (không bắt buộc)",
     thanks: {
-      yes: { emoji: "🥳", title: "Hẹn gặp em nha!", body: "Anh nhận được xác nhận của em rồi. Cảm ơn em đã đến chung vui, nhớ đến đúng giờ nhé!" },
-      no: { emoji: "🤗", title: "Không sao đâu em!", body: "Cảm ơn em đã báo anh biết. Em cứ lo việc của em nhé, hẹn em dịp khác." },
-      wish: "Anh đọc lời nhắn của em rồi, cảm ơn em nhiều 💚",
+      yes: { emoji: "✅", title: "Anh đã nhận được xác nhận", body: "Cảm ơn em đã sắp xếp thời gian. Hẹn gặp em tại buổi lễ, em nhớ đến đúng giờ." },
+      no: { emoji: "🙏", title: "Anh đã nhận được phản hồi", body: "Cảm ơn em đã báo cho anh biết. Hẹn gặp em vào dịp khác." },
+      wish: "Anh đã đọc lời nhắn của em, cảm ơn em.",
     },
-    footer: "🎓 Lễ tốt nghiệp của Lâm Trường — Cảm ơn em đã đến 🎓",
+    footer: "🎓 Lễ tốt nghiệp của Lâm Trường 🎓",
   },
 };
 
